@@ -8,9 +8,11 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { HelloIonicPage } from '../pages/HelloPage/hello-ionic';
 import {ActionPage} from '../pages/actionsheets/action-sheet';
+import { BasicAlert} from '../pages/alerts/basic-alert';
 @NgModule({
   declarations: [
-    MyApp,
+    MyApp, 
+    BasicAlert,   
     HelloIonicPage,
     ActionPage,
     HomePage
@@ -22,6 +24,7 @@ import {ActionPage} from '../pages/actionsheets/action-sheet';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
+    BasicAlert,
     HelloIonicPage,
     ActionPage,
     HomePage

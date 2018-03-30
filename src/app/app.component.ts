@@ -5,12 +5,14 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { HomePage } from '../pages/home/home';
 import { HelloIonicPage } from '../pages/HelloPage/hello-ionic';
-import {ActionPage} from '../pages/actionsheets/action-sheet';
+import { ActionPage } from '../pages/actionsheets/action-sheet';
+import { BasicAlert } from '../pages/alerts/basic-alert';
 @Component({
   templateUrl: 'app.html'
 })
 export class MyApp {
-  rootPage:any = ActionPage;
+  //rootPage:any = ActionPage;
+ rootPage:any = BasicAlert;
 
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {
     platform.ready().then(() => {
