@@ -9,13 +9,19 @@ import { HomePage } from '../pages/home/home';
 import { HelloIonicPage } from '../pages/HelloPage/hello-ionic';
 import {ActionPage} from '../pages/actionsheets/action-sheet';
 import { BasicAlert} from '../pages/alerts/basic-alert';
+import { PromptAlert } from '../pages/alerts/prompt-alert';
+import { BasicNavPage } from '../pages/navigation/basic-navigation';
+import { NavigationDetailsPage } from '../pages/navigation/basic-nav-details';
 @NgModule({
   declarations: [
     MyApp, 
     BasicAlert,   
     HelloIonicPage,
     ActionPage,
-    HomePage
+    HomePage,
+    PromptAlert,
+    BasicNavPage,
+    NavigationDetailsPage
   ],
   imports: [
     BrowserModule,
@@ -27,7 +33,10 @@ import { BasicAlert} from '../pages/alerts/basic-alert';
     BasicAlert,
     HelloIonicPage,
     ActionPage,
-    HomePage
+    HomePage,
+    PromptAlert,
+    BasicNavPage,
+    NavigationDetailsPage
   ],
   providers: [
     StatusBar,

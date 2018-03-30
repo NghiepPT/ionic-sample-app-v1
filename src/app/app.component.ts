@@ -7,12 +7,16 @@ import { HomePage } from '../pages/home/home';
 import { HelloIonicPage } from '../pages/HelloPage/hello-ionic';
 import { ActionPage } from '../pages/actionsheets/action-sheet';
 import { BasicAlert } from '../pages/alerts/basic-alert';
+import { PromptAlert } from '../pages/alerts/prompt-alert';
+import { BasicNavPage } from '../pages/navigation/basic-navigation';
 @Component({
   templateUrl: 'app.html'
 })
 export class MyApp {
   //rootPage:any = ActionPage;
- rootPage:any = BasicAlert;
+ //rootPage:any = BasicAlert;
+ //rootPage:any = PromptAlert;
+ rootPage:any = BasicNavPage;
 
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {
     platform.ready().then(() => {
