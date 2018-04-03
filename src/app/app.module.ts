@@ -13,6 +13,7 @@ import { PromptAlert } from '../pages/alerts/prompt-alert';
 import { BasicNavPage } from '../pages/navigation/basic-navigation';
 import { NavigationDetailsPage } from '../pages/navigation/basic-nav-details';
 import {MenuPage} from '../pages/menu/menu';
+import {SlidePage} from '../pages/slides/slide';
 @NgModule({
   declarations: [
     MyApp, 
@@ -23,7 +24,8 @@ import {MenuPage} from '../pages/menu/menu';
     PromptAlert,
     BasicNavPage,
     NavigationDetailsPage,
-    MenuPage
+    MenuPage,
+    SlidePage
   ],
   imports: [
     BrowserModule,
@@ -39,7 +41,8 @@ import {MenuPage} from '../pages/menu/menu';
     PromptAlert,
     BasicNavPage,
     NavigationDetailsPage,
-    MenuPage
+    MenuPage,
+    SlidePage
   ],
   providers: [
     StatusBar,

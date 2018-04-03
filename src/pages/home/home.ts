@@ -3,7 +3,8 @@ import { NavController } from 'ionic-angular';
 import { ActionPage } from '../actionsheets/action-sheet';
 import {BasicAlert} from '../alerts/basic-alert';
 import {PromptAlert} from '../alerts/prompt-alert';
-import  {MenuPage} from '../menu/menu';
+import {MenuPage} from '../menu/menu';
+import {SlidePage} from '../slides/slide';
 @Component({
   selector: 'page-home',
   templateUrl: 'home.html'
@@ -34,6 +35,12 @@ export class HomePage {
       'type': 'Menu',
       'color': '#E63135',
       'icon': 'angular'
+    },
+    {
+      'title': 'Slide',
+      'type': 'Slide',
+      'color': '#E63135',
+      'icon': 'angular'
     }
   ]
   }
@@ -55,6 +62,10 @@ export class HomePage {
     {
       this.navCtrl.push(MenuPage);
     }
-  
+    else if(item.type =='Slide')
+    {
+      this.navCtrl.push(SlidePage);
+    }
+
   }
 }
