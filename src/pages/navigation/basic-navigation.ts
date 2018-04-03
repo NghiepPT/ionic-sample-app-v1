@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import {NavigationDetailsPage} from '../navigation/basic-nav-details';
+import {BasicAlert} from '../alerts/basic-alert';
 @Component({
   templateUrl: 'basic-navigation.html'
 })
@@ -68,6 +69,10 @@ export class BasicNavPage {
 
   openNavDetailsPage(item) {
     this.nav.push(NavigationDetailsPage, { item: item });
+  }
+  gotoAlertPage()
+  {
+      this.nav.push(BasicAlert);
   }
 
 }

@@ -16,7 +16,8 @@ export class MyApp {
   //rootPage:any = ActionPage;
  //rootPage:any = BasicAlert;
  //rootPage:any = PromptAlert;
- rootPage:any = BasicNavPage;
+ //rootPage:any = BasicNavPage;
+ rootPage:any = HomePage;
 
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {
     platform.ready().then(() => {

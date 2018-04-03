@@ -1,14 +1,32 @@
-<ion-header>
-  <ion-navbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
-    
-  </ion-navbar>
-</ion-header>
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+<!-- <ion-menu [content]="content">
+    <ion-header>
+        <ion-toolbar>
+          <ion-title>Menu</ion-title>
+        </ion-toolbar>
+      </ion-header>
+      <ion-content>
+        <ion-list>
+          <button ion-item (click)="openPage(homePage)">
+            Home
+          </button>
+          <button ion-item (click)="openPage(friendsPage)">
+            Friends
+          </button>
+          <button ion-item (click)="openPage(eventsPage)">
+            Events
+          </button>
+          <button ion-item (click)="closeMenu()">
+            Close Menu
+          </button>
+        </ion-list>
+      </ion-content>
+</ion-menu> -->
+<ion-content>
+  <ion-list>
+    <button ion-item *ngFor="let item of items" (click)="gotoPage(item)" icon-start>
+      <ion-icon [name]="'logo-' + item.icon" [ngStyle]="{'color': item.color}" item-start></ion-icon>
+      {{ item.title }}
+    </button>
+  </ion-list>
 </ion-content>
+<ion-nav id="nav" #content></ion-nav>

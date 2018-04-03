@@ -12,6 +12,7 @@ import { BasicAlert} from '../pages/alerts/basic-alert';
 import { PromptAlert } from '../pages/alerts/prompt-alert';
 import { BasicNavPage } from '../pages/navigation/basic-navigation';
 import { NavigationDetailsPage } from '../pages/navigation/basic-nav-details';
+import {MenuPage} from '../pages/menu/menu';
 @NgModule({
   declarations: [
     MyApp, 
@@ -21,7 +22,8 @@ import { NavigationDetailsPage } from '../pages/navigation/basic-nav-details';
     HomePage,
     PromptAlert,
     BasicNavPage,
-    NavigationDetailsPage
+    NavigationDetailsPage,
+    MenuPage
   ],
   imports: [
     BrowserModule,
@@ -36,7 +38,8 @@ import { NavigationDetailsPage } from '../pages/navigation/basic-nav-details';
     HomePage,
     PromptAlert,
     BasicNavPage,
-    NavigationDetailsPage
+    NavigationDetailsPage,
+    MenuPage
   ],
   providers: [
     StatusBar,
