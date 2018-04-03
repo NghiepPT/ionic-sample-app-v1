@@ -1,6 +1,6 @@
 # ionic-sample-app-v1
 This is project to demo some ionic framework sample
-## Getting Starte
+## Getting Started
 
 Download the installer for Node.js 6 or greater.
 
